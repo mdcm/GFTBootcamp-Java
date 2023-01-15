@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="desafios/src"/>
+	<classpathentry kind="src" path="java-anatomia-classe/src/dio/gft/java/segunda semana"/>
+	<classpathentry kind="src" path="loops-e-arrays/out/test/lacos-e-arrays/src"/>
+	<classpathentry kind="src" path="loops-e-arrays/src"/>
+	<classpathentry kind="src" path="MyFirstJavaProject/src"/>
+	<classpathentry kind="src" path="sistema-smart-tv/src"/>
+	<classpathentry kind="output" path="MyFirstJavaProject/bin"/>
+</classpath>
