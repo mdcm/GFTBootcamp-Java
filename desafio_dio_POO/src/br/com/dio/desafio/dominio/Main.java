@@ -16,15 +16,40 @@ public class Main {
 		curso2.setDescricao("descrição curso js");
 		curso2.setCargaHoraria(4);
 		
-		System.out.println(curso1);
-		System.out.println(curso2);
-		
 		Mentoria mentoria = new Mentoria();
 		mentoria.setTitulo("mentoria de java");
 		mentoria.setDescricao("descrição mentoria java");
 		mentoria.setData(LocalDate.now());
 		
-		System.out.println(mentoria);
+		Bootcamp bootcamp = new Bootcamp();
+		bootcamp.setNome("Bootcamp Java Developer");
+		bootcamp.setDescricao("Descrição Bootcamp Java Dev");
+		bootcamp.getConteudos().add(curso1);
+		bootcamp.getConteudos().add(curso2);
+		bootcamp.getConteudos().add(mentoria);
+		
+		Dev devMarcia = new Dev();
+		devMarcia.setNome("Marcia");
+		devMarcia.inscreverBootCamp(bootcamp);
+		System.out.println("Conteúdos Inscritos Márcia " + devMarcia
+				.getConteudosInscritos());
+		devMarcia.progredir();
+		System.out.println("Conteúdos Inscritos Márcia " + devMarcia
+				.getConteudosInscritos());
+		System.out.println("Conteúdos Concluídos Márcia " + devMarcia
+				.getConteudosConcluidos());
+		Dev devDaiane = new Dev();
+		devDaiane.setNome("Daiane");
+		devDaiane.inscreverBootCamp(bootcamp);
+		System.out.println("Conteúdos Inscritos Daiane " + devDaiane
+				.getConteudosInscritos());
+		devDaiane.progredir();
+		System.out.println("Conteúdos Inscritos Daiane " + devDaiane
+				.getConteudosInscritos());
+		System.out.println("Conteúdos Concluídos Daiane " + devDaiane
+				.getConteudosConcluidos());
+		
+		
 	}
 
 }
